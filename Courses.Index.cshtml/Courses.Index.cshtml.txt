@@ -1,0 +1,27 @@
+@model IEnumerable<StudentReg.Models.Course>
+@{
+    ViewBag.Title = "Courses";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Courses</h2>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in Model)
+            {
+                <tr>
+                    <td>@course.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+
