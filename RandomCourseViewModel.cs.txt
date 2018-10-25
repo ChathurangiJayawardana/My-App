@@ -1,0 +1,14 @@
+using StudentReg.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace StudentReg.ViewModels
+{
+    public class RandomCourseViewModel
+    {
+        public Course Course { get; set; }
+        public List<Student> Students { get; set; }
+    }
+}
